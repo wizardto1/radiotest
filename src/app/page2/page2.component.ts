@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page2.component.css']
 })
 export class Page2Component implements OnInit {
+  score1:string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  radioEventHandler(event:any){
+    this.score1=event.target.value
   }
 
 }
