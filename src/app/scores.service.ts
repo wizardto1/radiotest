@@ -9,6 +9,10 @@ export class ScoresService {
     this.score1=score;
     console.log(this.score1)
   }
+  setScore2(score){
+    this.score2=score;
+    console.log(this.score2);
+  }
 
   constructor() { }
 

@@ -10,7 +10,7 @@
   
 
  <span>Score:<!--{{score1}}--> {{flag}}</span><br>
-<button [routerLink]="['/page1']">
+<button [routerLink]="['/page1']" (click)="setScore2(flag)">
       Next
     </button>
    
