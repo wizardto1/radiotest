@@ -9,6 +9,7 @@ export class Page4Component implements OnInit {
 score3:number=0;
 score4:number=0;
 score5:number=0;
+flag:any
 
   constructor() { }
 

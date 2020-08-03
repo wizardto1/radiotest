@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page2Component implements OnInit {
   score1:number;
+  flag:any;
 
-  constructor() { }
+  constructor() { this.flag = 0; }
 
   ngOnInit() {
   }

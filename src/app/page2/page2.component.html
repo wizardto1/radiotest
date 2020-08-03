@@ -1,15 +1,15 @@
 
 <div class="form-group col-md-4">
-<input type="radio" id="0" name="q1" value="0"   (change)=radioEventHandler($event) required>
+<input type="radio" id="0" name="q1" [value]="0"  [(ngModel)]="flag"  (change)=radioEventHandler($event) required>
   <label for="0" style="font-weight:bold">0 )</label><br>
-  <input type="radio" id="1" name="q1" value="1" (change)=radioEventHandler($event) required>
+  <input type="radio" id="1" name="q1" [value]="1" [(ngModel)]="flag"  (change)=radioEventHandler($event) required>
   <label for="1" style="font-weight:bold">1 )</label><br>
-  <input type="radio" id="2" name="q1" value="2"   (change)=radioEventHandler($event) required>
+  <input type="radio" id="2" name="q1" [value]="2" [(ngModel)]="flag"  (change)=radioEventHandler($event) required>
   <label for="2" style="font-weight:bold">2 )</label><br>
   </div>
   
 
- <span>Score:{{score1}}</span><br>
+ <span>Score:<!--{{score1}}--> {{flag}}</span><br>
 <button [routerLink]="['/page1']">
       Next
     </button>
