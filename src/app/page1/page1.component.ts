@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScoresService } from '../scores.service';
 
 @Component({
   selector: 'app-page1',
@@ -9,7 +10,10 @@ export class Page1Component implements OnInit {
   score2:number;
   flag1:any;
 
-  constructor() {this.flag1=0 }
+  constructor(private scoresService: ScoresService) {this.flag1=0}
+  setScore1(flag1){
+    this.scoresService.setScore1(flag1)
+  }
 
   ngOnInit() {
   }

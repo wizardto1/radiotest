@@ -2,8 +2,13 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ScoresService {
-  score1
-  score2
+  score1='number';
+  score2='number';
+
+  setScore1(score){
+    this.score1=score;
+    console.log(this.score1)
+  }
 
   constructor() { }
 
