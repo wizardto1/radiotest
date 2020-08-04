@@ -13,6 +13,10 @@ export class ScoresService {
     this.score2=score;
     console.log(this.score2);
   }
+  getScore1(){
+    return this.score1
+  }
+  getScore2(){return this.score2}
 
   constructor() { }
 
