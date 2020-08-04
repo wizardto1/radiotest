@@ -10,6 +10,6 @@
  <button [routerLink]="['/page2']" (click)="setScore1(flag1)">
       Previous
     </button>
-<button [routerLink]="['/page3']"  (click)="setScore1(flag1)">
+<button [routerLink]="['/page3']"  (click)="setScore1(flag1)" [disabled]="!buttonDisabled" >
       Next
     </button>
