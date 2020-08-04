@@ -9,6 +9,7 @@ import { ScoresService } from '../scores.service';
 export class Page1Component implements OnInit {
   score2:number;
   flag1:any;
+  
 
   constructor(private scoresService: ScoresService) {this.flag1=0}
   setScore1(flag1){
@@ -16,6 +17,7 @@ export class Page1Component implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.flag1)
     this.flag1=this.scoresService.getScore1()
   }
   radioEventHandler(event:any){
