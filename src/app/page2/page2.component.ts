@@ -16,6 +16,7 @@ export class Page2Component implements OnInit {
 
 
   ngOnInit() {
+    this.flag=this.scoresService.getScore2()
   }
   radioEventHandler(event:any){
     this.score1=event.target.value
