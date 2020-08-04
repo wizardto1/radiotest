@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 export class ScoresService {
   score1='number';
   score2='number';
+  total;
 
   setScore1(score){
     this.score1=score;
@@ -17,6 +18,11 @@ export class ScoresService {
     return this.score1
   }
   getScore2(){return this.score2}
+  getTotal(){
+    this.total=parseInt(this.score1)+parseInt(this.score2); 
+  return this.total;
+
+  }
 
   constructor() { }
 
